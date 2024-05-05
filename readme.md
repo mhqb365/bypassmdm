@@ -43,10 +43,13 @@ curl https://raw.githubusercontent.com/mhqb365/bypassmdm/main/mdm.sh -o mdm.sh &
 
 <img src="./img/10.jpg" />
 
-> Nhập tên tài khoản + mật khẩu theo hướng dẫn hoặc cứ Enter 3 lần để đặt theo mặt định (tk: MAC / mk: 1234)<br />
+> Nhập tên tài khoản + mật khẩu theo hướng dẫn hoặc cứ Enter 3 lần để đặt theo mặt định (tk: MAC / mk: 1234)
+
+<img src="./img/10-1.jpg" />
+
 > Thấy dòng chữ ```Chặn host thành công``` thì khởi động lại hoặc gõ ```reboot``` vào Terminal rồi Enter cho lẹ
 
-## Bước 4. Setup vào trong như bình thường
+## Bước 4. Khởi động lại
 
 <img src="./img/11.jpg" />
 
