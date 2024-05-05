@@ -63,3 +63,23 @@ curl https://raw.githubusercontent.com/mhqb365/bypassmdm/main/mdm.sh -o mdm.sh &
 <img src="./img/12.jpg" />
 
 *Nguồn: maclife.io*
+
+# Kiểm tra MacBook của bạn có phải máy MDM hay không?
+
+## Cách 1:
+
+> Copy dòng lệnh sau và bỏ vào Terminal:
+
+```sh
+profiles status -type enrollment
+```
+
+> Nếu Terminal hiển thị ```Enrolled via DEP``` hoặc ```MDM enrollment``` thì là xác định là máy MDM rồi đấy<br />
+> Nhược điểm cách này là độ chính xác tương đối
+
+## Cách 2:
+
+> Cài lại MacOS, đến bước active nếu máy đòi hỏi đăng nhập công ty hoặc hiển thị 1 bảng Remote Management là xác định MDM luôn 🤣
+
+
+## Goodluck
