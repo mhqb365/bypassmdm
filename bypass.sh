@@ -17,17 +17,17 @@ select opt in "${options[@]}"; do
 		fi
 		echo -e "${GRN}Tạo người dùng mới"
         echo -e "${BLU}Nhấn Enter để chuyển bước tiếp theo, có thể không điền sẽ tự động nhận giá trị mặc định"
-  		echo -e "Nhập tên người dùng (Mặc định: MAC)"
+  		echo -e "Nhập tên người dùng (Mặc định: mac)"
 		read realName
   		realName="${realName:=MAC}"
-    	echo -e "${BLUE}Nhận username ${RED}VIẾT LIỀN KHÔNG DẤU ${GRN} (Mặc định: MAC)"
+    	echo -e "${BLUE}Nhập username ${RED}VIẾT LIỀN KHÔNG DẤU ${GRN} (mặc định: mac)"
       	read username
 		username="${username:=MAC}"
   		echo -e "${BLUE}Nhập mật khẩu (mặc định: 1234)"
     	read passw
       	passw="${passw:=1234}"
 		dscl_path='/Volumes/Data/private/var/db/dslocal/nodes/Default' 
-        echo -e "${GREEN}Đang tạo user"
+        echo -e "${GREEN}Đang tạo người dùng bypass"
   		# Create user
     	dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username"
       	dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" UserShell "/bin/zsh"
@@ -42,7 +42,7 @@ select opt in "${options[@]}"; do
 		echo "0.0.0.0 deviceenrollment.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
 		echo "0.0.0.0 mdmenrollment.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
 		echo "0.0.0.0 iprofiles.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
-        echo -e "${GREEN}Chặn host thành công${NC}"
+        echo -e "${GREEN}Bypass thành công${NC}"
 		# echo "Remove config profile"
   	touch /Volumes/Data/private/var/db/.AppleSetupDone
         rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
