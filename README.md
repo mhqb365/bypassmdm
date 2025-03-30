@@ -1,5 +1,3 @@
-MacBook MDM là gì: https://chatgpt.com/share/67959333-7c14-8002-8d88-30629fdb607b
-
 # Hướng dẫn Bypass MDM các dòng MacBook không can thiệp phần cứng
 
 Dùng được cho cả chip Intel lẫn chip M
